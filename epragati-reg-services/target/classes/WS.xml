@@ -1,0 +1,182 @@
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://tempuri.org/">
+<wsdl:types>
+<s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+<s:element name="OtsiLiveDataSyncToCMS">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="vehicleNumber" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="vehicleRegisteredDate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="vehicleRegistrationValidUpto" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="vehicleIssuePlace" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="vehicleStatus" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="remarks" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownershipType" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerFirstName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerMiddileName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerLastName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerAge" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerFatherName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerPanNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerVoterId" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerMobileNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerAddress1" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerAddress2" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerAddress3" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerCity" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerState" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="ownerPin" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="vehicleOldNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="previousRegisteredOfficeName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="previousRegisteredOfficeState" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="governmentVehicle" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="reservedSpecialNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="vehicleIsRTC" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="insuranceNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="insuranceCompanyName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="insuranceValidFrom" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="insuranceValidTo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="makerName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="makerClass" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="dealerName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="dealerAddress1" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="dealerAddress2" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="dealerAddress3" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="dealerCity" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="dealerState" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="dealerAddressPinCode" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="vehicleClass" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="chassisNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="engineNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="vehicleType" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="bodyType" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="wheelBase" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="fuel" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="vehicleCC" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="cylenders" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="seatingCapacity" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="driverSeatingCapacity" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="standingCapacity" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="color" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="vehicleIsNewOld" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="manufactureMonthYear" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="horsePower" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="unleadenWeight" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="growssWeightCertificate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="growssWeightRegistrationTime" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="fronAxelTyreSizes" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="rearAxelTyreSizes" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="otherAxelTyreSizes" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="tandomAxelTyreSizes" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="fronWeight" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="rearWeight" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="otherAxelWeight" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="tandomAxelWeight" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="axelType" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="length" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="width" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="height" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="hangingCapacity" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="taxExemption" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="taxPaidOfficeCode" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="taxPaidStateCode" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="taxPaymentPeriod" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="taxDemandAmount" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="taxPenaltyAmount" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="taxCollectedAmount" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="taxDemandDate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="taxQuarterStartDate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="taxValidUpto" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="hypothecationType" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="financerName" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="financeAggrementDate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="financerAddress1" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="financerAddress2" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="financerAddress3" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="financerCity" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="financerState" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="financerPin" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="financerFaxNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="financerPhoneNO" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="financerEmailId" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="nocOfficeCode" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="APPLICATIONNO" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="FcNumber" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="FcIssuedBy" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="FcIssuedDate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="FcValidFromDate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="FcValidToDate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="FcApprovedBy" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="FcChallanNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="PermitNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="PermitClass" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="PermitType" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="PermitIssueDate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="PermitValidFromDate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="PermitValidToDate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="AuthorizationNo" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="AuthFromDate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="AuthToDate" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="RouteDescription" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="GoodsDescription" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="PermitLadenWeight" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="PermitRouteType" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="OneDistrictPermit" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="TwoDistrictPermit" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="TransactionDate" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="OtsiLiveDataSyncToCMSResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="OtsiLiveDataSyncToCMSResult" type="s:string"/>
+</s:sequence>
+</s:complexType>
+</s:element>
+</s:schema>
+</wsdl:types>
+<wsdl:message name="OtsiLiveDataSyncToCMSSoapIn">
+<wsdl:part name="parameters" element="tns:OtsiLiveDataSyncToCMS"/>
+</wsdl:message>
+<wsdl:message name="OtsiLiveDataSyncToCMSSoapOut">
+<wsdl:part name="parameters" element="tns:OtsiLiveDataSyncToCMSResponse"/>
+</wsdl:message>
+<wsdl:portType name="OtsiLiveDataSyncToCmsSoap">
+<wsdl:operation name="OtsiLiveDataSyncToCMS">
+<wsdl:input message="tns:OtsiLiveDataSyncToCMSSoapIn"/>
+<wsdl:output message="tns:OtsiLiveDataSyncToCMSSoapOut"/>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="OtsiLiveDataSyncToCmsSoap" type="tns:OtsiLiveDataSyncToCmsSoap">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="OtsiLiveDataSyncToCMS">
+<soap:operation soapAction="http://tempuri.org/OtsiLiveDataSyncToCMS" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:binding name="OtsiLiveDataSyncToCmsSoap12" type="tns:OtsiLiveDataSyncToCmsSoap">
+<soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="OtsiLiveDataSyncToCMS">
+<soap12:operation soapAction="http://tempuri.org/OtsiLiveDataSyncToCMS" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="OtsiLiveDataSyncToCms1">
+<wsdl:port name="OtsiLiveDataSyncToCmsSoap" binding="tns:OtsiLiveDataSyncToCmsSoap">
+<soap:address location="http://202.65.142.140/OTSINEWVEHSYNC/OTSINocInsertionIntoTS.asmx"/>
+</wsdl:port>
+<wsdl:port name="OtsiLiveDataSyncToCmsSoap12" binding="tns:OtsiLiveDataSyncToCmsSoap12">
+<soap12:address location="http://202.65.142.140/OTSINEWVEHSYNC/OTSINocInsertionIntoTS.asmx"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>
